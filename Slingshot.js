@@ -23,8 +23,8 @@ class SlingShot{
     }
 
     display(){
-        image(this.sling1,200,20);
-        image(this.sling2,170,20);
+        image(this.sling1,200,470);
+        image(this.sling2,170,470);
         if(this.sling.bodyA){
             var pointA = this.sling.bodyA.position;
             var pointB = this.pointB;
