@@ -7,6 +7,7 @@ var engine, world;
 var box1, pig1;
 var backgroundImg,platform;
 var bird, slingShot,ground,ground2;
+var score = 0;
 
 function preload() {
     backgroundImg = loadImage("sprites/bg.png");
@@ -51,28 +52,60 @@ function draw(){
     background(backgroundImg);
     Engine.update(engine);
     //strokeWeight(4);
-    box1.display();
-    box2.display();
+
+    text("SCORE:"+score,width-300,50);
+
     ground.display();
     ground2.display();
-    box3.display();
-    box4.display();
-    box5.display();
-    bird.display();
     platform.display();
     //log6.display();
     slingshot.display();
-    box6.display();    
-    box7.display();
-    box8.display();
-    box9.display();
-    box10.display();
-    box11.display();
-    box12.display();
-    box13.display();
-    box14.display();
-    box15.display();
+    bird.display();
+
+    box1.display();
+    box1.score();
     
+    box2.display();
+    box2.score();
+    
+    box3.display();
+    box3.score();
+
+    box4.display();
+    box4.score();
+
+    box5.display();
+    box5.score();
+   
+    box6.display(); 
+    box6.score();
+    
+    box7.display();
+    box7.score();
+
+    box8.display();
+    box8.score();
+
+    box9.display();
+    box9.score();
+    
+    box10.display();
+    box10.score();
+    
+    box11.display();
+    box11.score();
+    
+    box12.display();
+    box12.score();
+    
+    box13.display();
+    box13.score();
+    
+    box14.display();
+    box14.score();
+    
+    box15.display();
+    box15.score();
     
 }
 
